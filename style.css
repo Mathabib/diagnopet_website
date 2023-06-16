@@ -107,7 +107,14 @@ color: #ffffff;
 
 .form-pemeriksaan label{
   color: white;  
+  transition: 0.5s;
 }
+
+.form-pemeriksaan label:hover{
+    color:  #9cbff5; 
+    text-shadow: 0 0 10px #0d6efd; 
+    transition: 0.5s;
+  }
 
 
 .form-pemeriksaan2{
