@@ -20,6 +20,8 @@ def predict():
     feature = [np.array(integer_features)]
     prediction = trained_model.predict(feature)
     prediction =  prediction.item()
+    print(feature)
+    print(prediction)
     if prediction == 'Feline Panleukopenia':
         description = "Feline Panleukopenia adalah penyakit viral yang sangat menular pada kucing. Penyakit ini disebabkan oleh virus feline panleukopenia (FPV) dan dapat menyerang sel-sel yang membelah dengan cepat, seperti sumsum tulang, jaringan limfoid, usus, dan janin yang sedang berkembang. Penularannya terutama melalui kontak langsung dengan cairan tubuh kucing yang terinfeksi, serta melalui objek yang terkontaminasi. Gejala umum termasuk demam, kehilangan nafsu makan, muntah, diare (kadang-kadang berdarah), dehidrasi, dan penurunan jumlah sel darah putih. Feline Panleukopenia dapat sangat parah pada anak kucing, kucing hamil, dan kucing dengan sistem kekebalan yang lemah."
     elif prediction == 'Feline Immunodi ficiency Virus':
